@@ -62,7 +62,7 @@ export function StartScreen({ onStart }: StartScreenProps) {
   return (
     <div className="start-screen">
       <h1 className="app-title">Notentrainer</h1>
-      <p className="app-subtitle">Hier dein Text</p>
+      <p className="app-subtitle">Viel Spaß beim Noten lesen üben!</p>
       <ConfigPanel config={config} onChange={handleConfigChange} />
       <NoteSelector
         notes={allNotes}
