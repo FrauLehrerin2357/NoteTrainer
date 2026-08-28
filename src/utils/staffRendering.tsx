@@ -108,7 +108,7 @@ export function renderStaffSvg(
     }
 
     if (accidental !== 0 && !keySignature) {
-      const ax = noteX - 27;
+      const ax = noteX - 40;
       const yOff = accidental === 1 ? SHARP_Y_OFFSET : FLAT_Y_OFFSET;
       const ay = noteY + yOff;
       lines.push(`<text x="${ax}" y="${ay}" font-size="${ACCIDENTAL_FONT_SIZE}" font-family="${CLEF_FONT}">${getAccidentalSymbol(accidental)}</text>`);

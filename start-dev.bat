@@ -1,0 +1,6 @@
+@echo off
+cd /d "%~dp0"
+echo Installing dependencies...
+npm install || (echo npm install failed && pause && exit /b 1)
+echo Starting dev server...
+npm run dev
