@@ -31,6 +31,10 @@ export default function App() {
 
   return (
     <div className="app">
+      <div className="app-brand" aria-label="Notentrainer">
+        <span className="app-brand-mark">♫</span>
+        <span>notentrainer</span><span className="app-brand-accent">.</span>
+      </div>
       {screen === 'start' && <StartScreen onStart={handleStart} />}
       {screen === 'training' && config && (
         <TrainingScreen config={config} onFinish={handleFinish} onCancel={handleCancel} />
